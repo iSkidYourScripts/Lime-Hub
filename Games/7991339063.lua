@@ -341,7 +341,7 @@ if workspace:FindFirstChild('Monsters') then
         for i, v in pairs(game.workspace.Map_C1.ItemSpawns:GetDescendants()) do
             if v.name == "ItemSpawn" then
                 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(v.Position)
-                wait(math.random(getgenv().settings.tpInterval))
+                wait(getgenv().settings.tpInterval)
             end
         end
         notifLib:SendNotification('Success', 'Lime V2 is now collecting every item for you. Sit back, and enjoy the show!')
