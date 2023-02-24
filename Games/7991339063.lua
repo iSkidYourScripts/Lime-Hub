@@ -12,7 +12,7 @@ end
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/iSkidYourScripts/Lime-Hub/main/Libraries/LimeUI.lua",true))()
 local notifLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/iSkidYourScripts/Lime-Hub/main/Libraries/Notifications.lua"))()
 --[[
-Lime Hub V2 >>> Juego sin nombre [V2.2.11]
+Lime Hub V2 >>> 🌈 Rainbow Friends [V2.2.11]
 
 -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
@@ -341,7 +341,7 @@ if workspace:FindFirstChild('Monsters') then
         for i, v in pairs(game.workspace.Map_C1.ItemSpawns:GetDescendants()) do
             if v.name == "ItemSpawn" then
                 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(v.Position)
-                wait(getgenv().settings.tpInterval)
+                wait(math.random(getgenv().settings.tpInterval))
             end
         end
         notifLib:SendNotification('Success', 'Lime V2 is now collecting every item for you. Sit back, and enjoy the show!')
